@@ -1,0 +1,47 @@
+/*import da fonte do meu titulo*/
+@import url('https://fonts.cdnfonts.com/css/flash-2');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/* Mudas as caracteristicas de todo o coteudo do body*/
+body{
+    text-align: center;
+    background-color: rgb(165, 24, 24);
+}
+header{
+    background-color: rgb(221, 223, 59);
+    color: rgb(165, 24, 24);
+    padding: 20px; /*espaçamento interno*/
+    font-family: 'Flash', sans-serif;
+    font-size: 37px;
+}
+
+nav a {
+    color: rgb(165, 24, 24);
+    text-decoration: none; /*tirar o sublinhado do texto*/
+    display: inline-block; /* ativar o display*/
+    margin: 10px; /* aumentar o espaçamento entre as ancoras*/
+    padding: 10px 20px; /* aumentar o espaçamento interno */
+    background-color: dimgrey; /* mudar a cor de fundo da ancora*/
+    border-radius: 10px; /*arredondar a borda*/
+}
+
+nav a:hover{
+    background-color: rgb(221, 223, 59);
+
+}
+
+.card{
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 100%;
+}
