@@ -104,7 +104,8 @@ h2{
     padding: 10px;
     border-radius: 10px;
     color: rgb(221, 223, 59);
-    background-color: rgb(235, 22, 22);
+    background-image: url(./Imagens/flash\ de\ fundo.jpg);
+    background-size: 150px;
 }
 
 .temporadas1 {
@@ -124,4 +125,23 @@ h2{
     height: 400px;
     border-radius: 10px;
     padding: 10px;
+}
+footer{
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    transition: 0.9s box-shadow o.3s;
+}
+
+footer:hover{
+    color: rgb(255, 183, 0);
+    box-shadow: 0 0 20px rgb(229, 255, 0);
+    
+}
+/*reponsivo*/
+
+@media(max-width: 600px){
+    #personagens h2{
+        font-size: 50px;
+    }
+   
 }

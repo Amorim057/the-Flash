@@ -18,7 +18,7 @@ body{
 }
 
 #personagens h2{
-    color: rgb(238, 255, 6);;
+    color: rgb(221, 223, 59);
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px;
@@ -37,9 +37,119 @@ body{
 }
  .item{
     width: 250px;
-    background-color: goldenrod;
+    background-color: rgb(221, 223, 59);
     border-radius: 10px;
     padding: 20px;
     display: flex;/* ativar o flexbox*/
-    flex-direction: column;
+    flex-direction: column; /* muda a direção dos eixos e deixa em coluna*/
+    justify-content: space-between;
+    cursor: pointer;
  }
+
+ .item img{
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+ }
+
+ /*alteração do estilo do paragráfo*/
+ .item p{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    margin: 10px;
+ }
+
+ .item h3{
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "GRAD" 0,
+        "ROND" 0;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin-bottom: 15px;
+ }
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tag{
+    color: black;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+.velocista{
+   background-color: green;
+}
+
+.metahumana{
+    background-color: aquamarine;
+}
+
+.metahumano{
+    background-color: indigo;
+}
+.vilao{
+    background-color: darkred;
+}
+.heroi{
+    background-color: blue;
+}
+.protagonista{
+    background-color: chocolate;
+}
+.aura{
+    background-color: white;
+}
+.joe{
+    background-color: darkorchid;
+}
+.iris{
+    background-color: orangered;
+}
+.harri{
+    background-color: cornflowerblue;
+}
+.figurante{
+    background-color: darkolivegreen;
+}
+.item:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+footer{
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    transition: 0.9s box-shadow o.3s;
+}
+
+footer:hover{
+    color: rgb(255, 183, 0);
+    box-shadow: 0 0 20px rgb(229, 255, 0);
+}
+/*reponsivo*/
+
+@media(max-width: 600px){
+    #personagens h2{
+        font-size: 50px;
+    }
+   
+}
+
+.item{
+    width: 100%;
+    max-width: 320px;
+}
